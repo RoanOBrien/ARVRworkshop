@@ -5,9 +5,9 @@
  var rotationSpeedY = 0.01;
  var rotationSpeedZ = 0.04;
  //var growthCheck = 0;
- var widthInc = 0.02;
- var heightInc = 0.02;
- var depthInc = 0.02;
+ var widthInc = 0.2;
+ var heightInc = 0.2;
+ var depthInc = 0.2;
  var myOtherBox = document.getElementById('myOtherBox');
 
  function spin(){
