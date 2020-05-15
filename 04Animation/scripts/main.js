@@ -20,23 +20,24 @@
 
 function grow(){
     //var decrease = 10;
-    for (var growthCheck = 0; growthCheck < 10; growthCheck++){
-        myOtherBox.width += widthInc;
-        myOtherBox.height += heightInc;
-        myOtherBox.depth += depthInc;
-        if (growthCheck == 9){
-            decrease = 9;
-        }
-    }
-    
-    for (var decrease = 10; decrease > -1; decrease--){
-        myOtherBox.width -= widthInc;
-        myOtherBox.height -= heightInc;
-        myOtherBox.depth -= depthInc;
-        if (decrease == 0){
-            growthCheck = 0;
-        }
-    }
+    myOtherBox.object3D.width += widthInc;
+//    for (var growthCheck = 0; growthCheck < 10; growthCheck++){
+//        myOtherBox.width += widthInc;
+//        myOtherBox.height += heightInc;
+//        myOtherBox.depth += depthInc;
+//        if (growthCheck == 9){
+//            decrease = 9;
+//        }
+//    }
+//    
+//    for (var decrease = 10; decrease > -1; decrease--){
+//        myOtherBox.width -= widthInc;
+//        myOtherBox.height -= heightInc;
+//        myOtherBox.depth -= depthInc;
+//        if (decrease == 0){
+//            growthCheck = 0;
+//        }
+//    }
     
     console.log(myOtherBox.object3D.width);
 }
