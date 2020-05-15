@@ -19,17 +19,19 @@
  }
 
 function grow(){
-//    var increase = 0;
+    var increase = 0;
 //    var decrease = 10;
-    
+    if (increase < 100){
         myOtherBox.object3D.scale.x += widthInc;
         myOtherBox.object3D.scale.y += widthInc;
         myOtherBox.object3D.scale.z += widthInc;
-    
+        increase = increase + 1;
+        
+    }else{
         myOtherBox.object3D.scale.x -= widthInc;
         myOtherBox.object3D.scale.y -= widthInc;
         myOtherBox.object3D.scale.z -= widthInc;
-    
+    }
 //    for (var growthCheck = 0; growthCheck < 10; growthCheck++){
 //        myOtherBox.object3D.scale.x += widthInc;
 //        myOtherBox.object3D.scale.y += heightInc;
