@@ -6,8 +6,8 @@
  var rotationSpeedZ = 0.04;
  //var growthCheck = 0;
  var widthInc = 0.02;
- var heightInc = 0.2;
- var depthInc = 0.2;
+ var heightInc = 0.02;
+ var depthInc = 0.02;
  var myOtherBox = document.getElementById('myOtherBox');
 
  function spin(){
@@ -21,6 +21,8 @@
 function grow(){
     //var decrease = 10;
     myOtherBox.object3D.scale.x += widthInc;
+    myOtherBox.object3D.scale.y += widthInc;
+    myOtherBox.object3D.scale.z += widthInc;
 //    for (var growthCheck = 0; growthCheck < 10; growthCheck++){
 //        myOtherBox.object3D.scale.x += widthInc;
 //        myOtherBox.object3D.scale.y += heightInc;
