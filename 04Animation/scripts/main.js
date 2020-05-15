@@ -10,6 +10,7 @@
  	myOtherBox.object3D.rotation.x -= rotationSpeedX;
     myOtherBox.object3D.rotation.y += rotationSpeedY;
     myOtherBox.object3D.rotation.z += rotationSpeedZ;
+    myOtherBox.object3D.position.x -= rotationSpeedX;
  	console.log(myOtherBox.object3D.rotation.x);
  }
 
