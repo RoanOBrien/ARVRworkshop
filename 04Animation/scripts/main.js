@@ -22,7 +22,7 @@ var increase = 0;
 
 function grow(){
 //    var decrease = 10;
-    if (increase < 100){
+    if (increase < 500){
         myOtherBox.object3D.scale.x += widthInc;
         myOtherBox.object3D.scale.y += widthInc;
         myOtherBox.object3D.scale.z += widthInc;
@@ -32,7 +32,7 @@ function grow(){
         myOtherBox.object3D.scale.z -= widthInc;
     }
     increase = increase + 1;
-    if(increase == 200){
+    if(increase == 1000){
         increase = 0;
     }
 //    for (var growthCheck = 0; growthCheck < 10; growthCheck++){
