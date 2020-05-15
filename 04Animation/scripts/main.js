@@ -28,6 +28,7 @@ function grow(){
             decrease = 9;
         }
     }
+    
     for (var decrease = 10; decrease > -1; decrease--){
         myOtherBox.object3D.width -= widthInc;
         myOtherBox.object3D.height -= heightInc;
@@ -36,6 +37,8 @@ function grow(){
             growthCheck = 0;
         }
     }
+    
+    console.log(myOtherBox.object3D.width);
 }
  
  setInterval(spin, 16); //equivalent to 60 fps
