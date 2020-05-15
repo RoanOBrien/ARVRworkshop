@@ -18,19 +18,22 @@
  	console.log(myOtherBox.object3D.rotation.x);
  }
 
+var increase = 0;
+
 function grow(){
-    var increase = 0;
 //    var decrease = 10;
     if (increase < 100){
         myOtherBox.object3D.scale.x += widthInc;
         myOtherBox.object3D.scale.y += widthInc;
         myOtherBox.object3D.scale.z += widthInc;
-        increase = increase + 1;
-        
     }else{
         myOtherBox.object3D.scale.x -= widthInc;
         myOtherBox.object3D.scale.y -= widthInc;
         myOtherBox.object3D.scale.z -= widthInc;
+    }
+    increase = increase + 1;
+    if(increase == 200){
+        increase = 0;
     }
 //    for (var growthCheck = 0; growthCheck < 10; growthCheck++){
 //        myOtherBox.object3D.scale.x += widthInc;
