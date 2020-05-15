@@ -27,7 +27,8 @@ function grow(){
         myOtherBox.object3D.scale.z += widthInc;
         increase++;
         if (increase == 9){
-            decrease =9;
+            decrease = 9;
+            increase = 11;
         }
     }
     while (decrease > 0){
@@ -37,6 +38,7 @@ function grow(){
         increase--;
         if (decrease == 0){
             increase = 0;
+            decrease = -1;
         }
     }
 //    for (var growthCheck = 0; growthCheck < 10; growthCheck++){
