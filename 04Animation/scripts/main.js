@@ -5,9 +5,9 @@
  var rotationSpeedY = 0.01;
  var rotationSpeedZ = 0.04;
  //var growthCheck = 0;
- var widthInc = 0.02;
- var heightInc = 0.02;
- var depthInc = 0.02;
+ var widthInc = 0.01;
+// var heightInc = 0.02;
+// var depthInc = 0.02;
  var myOtherBox = document.getElementById('myOtherBox');
 
  function spin(){
@@ -19,28 +19,17 @@
  }
 
 function grow(){
-    var increase = 0;
-    var decrease = 10;
-    while (increase < 10){
+//    var increase = 0;
+//    var decrease = 10;
+    
         myOtherBox.object3D.scale.x += widthInc;
         myOtherBox.object3D.scale.y += widthInc;
         myOtherBox.object3D.scale.z += widthInc;
-        increase++;
-        if (increase == 9){
-            decrease = 9;
-            increase = 11;
-        }
-    }
-    while (decrease > 0){
+    
         myOtherBox.object3D.scale.x -= widthInc;
         myOtherBox.object3D.scale.y -= widthInc;
         myOtherBox.object3D.scale.z -= widthInc;
-        increase--;
-        if (decrease == 0){
-            increase = 0;
-            decrease = -1;
-        }
-    }
+    
 //    for (var growthCheck = 0; growthCheck < 10; growthCheck++){
 //        myOtherBox.object3D.scale.x += widthInc;
 //        myOtherBox.object3D.scale.y += heightInc;
